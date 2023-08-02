@@ -1,0 +1,94 @@
+/* common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+body {
+  overflow: hidden;
+}
+
+header {
+  background-color: rgb(245, 245, 245, 0.5);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 5px solid rgb(255, 217, 0);
+  /* z-index를 주려면 position이 static이면 안된다. */
+  z-index: 1;
+  position: relative;
+}
+
+header h1 {
+}
+
+header h1 a {
+}
+
+header #menu {
+  display: flex;
+}
+
+header #menu li {
+  margin: 0 1rem;
+}
+
+header #menu li a {
+}
+header #menu li a i {
+}
+
+/* sns */
+header .sns {
+  display: flex;
+}
+header .sns li {
+  margin: 0 0.5vw;
+}
+header .sns li a {
+  color: rgb(31, 29, 29);
+}
+header .sns li a i {
+}
+
+/* main */
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 긴편에 맞춰서 크기가 잘린다 */
+}
+main article {
+  position: absolute;
+  left: 6vw;
+  top: 40%;
+}
+main article p {
+  font-size: 4vw;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
